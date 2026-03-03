@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Instructors | Sommeliers Academy Sweden</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html">
+      <img src="images/logo.png" alt="Sommeliers Academy Sweden logo">
+    </a>
+
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">
+      ☰
+    </button>
+
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html" data-en="Home" data-sv="Hem">Home</a>
+      <a href="about.html" data-en="About" data-sv="Om oss">About</a>
+      <a href="courses.html" data-en="Courses" data-sv="Kurser">Courses</a>
+      <a href="instructors.html" data-en="Instructors" data-sv="Instruktörer">Instructors</a>
+      <a href="contact.html" data-en="Contact" data-sv="Kontakt">Contact</a>
+    </nav>
+
+    <div class="lang">
+      <button type="button" class="lang-btn" data-lang-btn="en" aria-label="English">🇬🇧</button>
+      <button type="button" class="lang-btn" data-lang-btn="sv" aria-label="Svenska">🇸🇪</button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <section class="page-hero">
+    <div class="container text-center narrow">
+      <h1 data-en="Our Instructors" data-sv="Våra instruktörer">Our Instructors</h1>
+      <p
+        data-en="Experienced educators focused on professional tasting, service, and international standards."
+        data-sv="Erfarna utbildare med fokus på professionell provning, service och internationella standarder."
+      >
+        Experienced educators focused on professional tasting, service, and international standards.
+      </p>
+    </div>
+  </section>
+
+  <section class="instructors-page">
+    <div class="container">
+      <div class="instructors-grid">
+        <div class="instructor-card card">
+          <img src="joseph.jpg" alt="Joseph" loading="lazy">
+          <h2 data-en="Joseph" data-sv="Joseph">Joseph</h2>
+          <p
+            data-en="Certified sommelier and wine educator with international hospitality experience. Joseph specialises in structured tasting methodology and professional service training."
+            data-sv="Certifierad sommelier och vinutbildare med internationell restaurangerfarenhet. Joseph fokuserar på strukturerad provningsmetodik och professionell service-träning."
+          >
+            Certified sommelier and wine educator with international hospitality experience. Joseph specialises in structured tasting methodology and professional service training.
+          </p>
+        </div>
+
+        <div class="instructor-card card">
+          <img src="Jean Vincent.jpg" alt="Jean Vincent" loading="lazy">
+          <h2 data-en="Jean Vincent" data-sv="Jean Vincent">Jean Vincent</h2>
+          <p
+            data-en="Senior wine educator and hospitality professional with extensive global experience. Jean Vincent leads advanced tasting calibration and service excellence modules."
+            data-sv="Senior vinutbildare och restaurangproffs med omfattande global erfarenhet. Jean Vincent leder avancerad provningskalibrering och moduler i serviceexcellens."
+          >
+            Senior wine educator and hospitality professional with extensive global experience. Jean Vincent leads advanced tasting calibration and service excellence modules.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <p data-en="© 2026 Sommeliers Academy Sweden" data-sv="© 2026 Sommeliers Academy Sweden">© 2026 Sommeliers Academy Sweden</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
