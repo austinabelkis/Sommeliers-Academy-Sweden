@@ -35,7 +35,7 @@
   // Home hero background rotation
   const hero = document.querySelector(".hero");
   if (hero) {
-    const images = ["images/hero1.jpg","images/hero2.jpg","images/hero3.jpg"];
+    const images = ["hero1.JPG","hero2.JPG","hero3.JPG"];
     let idx = 0;
 
     function setHero(i){ hero.style.backgroundImage = `url(${images[i]})`; }
