@@ -65,9 +65,18 @@ img{
   padding:14px 0;
 }
 
+.brand{
+  display:flex;
+  align-items:center;
+}
+
 .brand img{
   height:48px;
   width:auto;
+  background:linear-gradient(to bottom, rgba(20,20,20,0.96), rgba(45,45,45,0.96));
+  padding:6px 8px;
+  border-radius:10px;
+  box-shadow:0 2px 8px rgba(0,0,0,0.12);
 }
 
 .site-nav{
