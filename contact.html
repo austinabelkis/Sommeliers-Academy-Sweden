@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-title-en="Contact | Sommeliers Academy Sweden" data-title-sv="Kontakt | Sommeliers Academy Sverige">Contact | Sommeliers Academy Sweden</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body data-page="contact">
+
+<header class="site-header">
+  <div class="container header-inner">
+    <a class="brand" href="index.html"><img src="logo.png" alt="Sommeliers Academy Sweden logo" /></a>
+    <button class="nav-toggle" type="button" aria-controls="site-nav" aria-expanded="false">☰</button>
+    <nav id="site-nav" class="site-nav">
+      <a href="index.html" data-en="Home" data-sv="Hem">Home</a>
+      <a href="about.html" data-en="About" data-sv="Om oss">About</a>
+      <a href="courses.html" data-en="Courses" data-sv="Kurser">Courses</a>
+      <a href="instructors.html" data-en="Instructors" data-sv="Lärare">Instructors</a>
+      <a href="contact.html" data-en="Contact" data-sv="Kontakt">Contact</a>
+    </nav>
+    <div class="lang">
+      <button class="lang-btn" type="button" data-lang-btn="en">🇬🇧</button>
+      <button class="lang-btn" type="button" data-lang-btn="sv">🇸🇪</button>
+    </div>
+  </div>
+</header>
+
+<section class="page-hero page-hero-contact">
+  <div class="container page-hero-inner">
+    <h1 data-en="Contact" data-sv="Kontakt">Contact</h1>
+    <p
+      data-en="For pricing, enrollment, partnerships, or general enquiries — send a message below."
+      data-sv="För pris, anmälan, samarbeten eller allmänna frågor — skicka ett meddelande nedan.">
+      For pricing, enrollment, partnerships, or general enquiries — send a message below.
+    </p>
+  </div>
+</section>
+
+<section class="section">
+  <div class="container">
+    <form class="form" name="contact" method="POST" data-netlify="true" data-netlify-honeypot="bot-field" action="/thanks.html">
+      <input type="hidden" name="form-name" value="contact" />
+      <p style="display:none;">
+        <label>Don’t fill this out: <input name="bot-field" /></label>
+      </p>
+
+      <div class="form-row">
+        <div>
+          <label for="name" data-en="Name" data-sv="Namn">Name</label>
+          <input id="name" name="name" type="text" required />
+        </div>
+        <div>
+          <label for="email" data-en="Email" data-sv="E-post">Email</label>
+          <input id="email" name="email" type="email" required />
+        </div>
+      </div>
+
+      <label for="message" data-en="Message" data-sv="Meddelande">Message</label>
+      <textarea id="message" name="message" rows="7" required></textarea>
+
+      <button class="btn btn-primary" type="submit" data-en="Send inquiry" data-sv="Skicka förfrågan">Send inquiry</button>
+
+      <p class="small"
+         data-en="Or email us directly at sweden@sommeliers.academy"
+         data-sv="Eller mejla oss direkt på sweden@sommeliers.academy">
+        Or email us directly at sweden@sommeliers.academy
+      </p>
+    </form>
+  </div>
+</section>
+
+<section class="section section-border">
+  <div class="container">
+    <div class="newsletter">
+      <h3 data-en="Stay in touch" data-sv="Håll kontakten">Stay in touch</h3>
+      <p class="muted"
+         data-en="Get course updates, future dates, and occasional wine education news."
+         data-sv="Få kursuppdateringar, framtida datum och nyheter om vinutbildning.">
+        Get course updates, future dates, and occasional wine education news.
+      </p>
+
+      <form
+        class="newsletter-form"
+        action="https://sommeliersacademysweden.us17.list-manage.com/subscribe/post?u=dcc40fd2be910c613a5ed6754&amp;id=f0f345bcec&amp;f_id=00c7c3e1f0"
+        method="post"
+        target="_blank"
+        novalidate
+      >
+        <input
+          type="email"
+          name="EMAIL"
+          required
+          data-placeholder-en="Email address"
+          data-placeholder-sv="E-postadress"
+          placeholder="Email address"
+        />
+
+        <div style="position:absolute; left:-5000px;" aria-hidden="true">
+          <input
+            type="text"
+            name="b_dcc40fd2be910c613a5ed6754_f0f345bcec"
+            tabindex="-1"
+            value=""
+          />
+        </div>
+
+        <button class="btn btn-primary" type="submit" data-en="Join newsletter" data-sv="Prenumerera">
+          Join newsletter
+        </button>
+      </form>
+
+      <p class="small"
+         data-en="No spam. Just course updates and occasional wine education news."
+         data-sv="Ingen spam. Bara kursuppdateringar och nyheter om vinutbildning.">
+        No spam. Just course updates and occasional wine education news.
+      </p>
+    </div>
+  </div>
+</section>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span data-en="© 2026 Sommeliers Academy Sweden" data-sv="© 2026 Sommeliers Academy Sverige">© 2026 Sommeliers Academy Sweden</span>
+    <a href="https://www.instagram.com/sommeliersacademysweden/" target="_blank" rel="noopener">Instagram</a>
+  </div>
+</footer>
+
+<div class="cookie-banner" id="cookie-banner">
+  <p
+    data-en="This site uses cookies and tracking tools to understand traffic and improve marketing performance."
+    data-sv="Den här sidan använder cookies och spårningsverktyg för att förstå trafik och förbättra marknadsföringen.">
+    This site uses cookies and tracking tools to understand traffic and improve marketing performance.
+  </p>
+  <div class="cookie-actions">
+    <button class="btn btn-primary" id="cookie-accept" type="button" data-en="Accept" data-sv="Acceptera">Accept</button>
+    <button class="btn btn-secondary" id="cookie-reject" type="button" data-en="Decline" data-sv="Avböj">Decline</button>
+  </div>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
