@@ -24,6 +24,10 @@ html, body{
   height:100%;
 }
 
+body, button, input, textarea{
+  font-family:Optima, Candara, "Noto Sans", sans-serif;
+}
+
 body{
   background:var(--bg);
   color:var(--text);
