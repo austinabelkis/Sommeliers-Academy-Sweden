@@ -77,10 +77,10 @@ img{
 .brand img{
   height:48px;
   width:auto;
-  background:linear-gradient(to bottom, rgba(20,20,20,0.96), rgba(45,45,45,0.96));
-  padding:6px 8px;
-  border-radius:10px;
-  box-shadow:0 2px 8px rgba(0,0,0,0.12);
+  background:none;
+  padding:0;
+  border-radius:0;
+  box-shadow:none;
 }
 
 .site-nav{
@@ -114,9 +114,9 @@ img{
 
 .nav-toggle{
   display:none;
-  border:1px solid var(--line);
-  background:#fff;
-  color:var(--text);
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.06);
+  color:#f3f0ea;
   border-radius:12px;
   padding:10px 12px;
   font-size:18px;
@@ -132,8 +132,8 @@ img{
   width:44px;
   height:44px;
   border-radius:999px;
-  border:1px solid var(--line);
-  background:#fff;
+  border:1px solid rgba(255,255,255,.16);
+  background:rgba(255,255,255,.06);
   font-size:20px;
   display:flex;
   align-items:center;
