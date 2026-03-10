@@ -53,22 +53,17 @@
   } catch (e) {}
   applyLanguage(savedLang);
 
-  const hero = document.querySelector(".hero");
-  if (hero) {
-    const images = ["hero1.JPG", "hero2.JPG", "hero3.JPG"];
-    let index = 0;
+ const slides = document.querySelectorAll(".hero-slide");
 
-    function setHero(i) {
-      hero.style.backgroundImage = `url(${images[i]})`;
-    }
+if (slides.length > 0) {
+  let current = 0;
 
-    setHero(index);
-
-    setInterval(() => {
-      index = (index + 1) % images.length;
-      setHero(index);
-    }, 5500);
-  }
+  setInterval(() => {
+    slides[current].classList.remove("is-active");
+    current = (current + 1) % slides.length;
+    slides[current].classList.add("is-active");
+  }, 5000);
+}
 
   function loadGA() {
     if (window.__gaLoaded) return;
